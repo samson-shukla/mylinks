@@ -37,6 +37,8 @@ const COLORS = {
   DEFAULT_CARD_HOVER_SHADOW: "rgba(0, 0, 0, 0.12)",
   DEFAULT_ICON_BG: "#f3f4f6",
   LOADING_TEXT: "#6b7280",
+  DEFAULT_BG_SECONDARY: "#25D366",
+  DEFAULT_BG_TERTIARY: "#3390FF",
 };
 
 const iconComponents = {
@@ -151,11 +153,17 @@ const MylinksPage = () => {
       {/* Decorative background elements */}
       <div
         className="absolute top-0 left-0 w-72 h-72 rounded-full blur-3xl opacity-20 pointer-events-none"
-        style={{ backgroundColor: themeColor?.bg_tertiary_color || "#3390FF" }}
+        style={{
+          backgroundColor:
+            themeColor?.bg_tertiary_color || COLORS.DEFAULT_BG_TERTIARY,
+        }}
       />
       <div
         className="absolute bottom-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none"
-        style={{ backgroundColor: themeColor?.bg_secondary_color || "#25D366" }}
+        style={{
+          backgroundColor:
+            themeColor?.bg_secondary_color || COLORS.DEFAULT_BG_SECONDARY,
+        }}
       />
 
       {isLoading && (
