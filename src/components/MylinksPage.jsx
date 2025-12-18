@@ -173,7 +173,7 @@ const MylinksPage = () => {
             style={{ color: COLORS.LOADING_TEXT }}
             className="text-lg font-medium"
           >
-            Loading your links...
+            Loading MyLinks . . .
           </p>
         </div>
       )}
@@ -191,7 +191,7 @@ const MylinksPage = () => {
                     : myLinksLinks.profileName?.charAt(0).toUpperCase()
                 }
                 alt="Profile Pic"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-full"
               />
             </div>
 
@@ -205,7 +205,7 @@ const MylinksPage = () => {
 
             {/* Optional bio/tagline space */}
             <p className="text-lg opacity-80" style={{ color: textSubheading }}>
-              Connect with me
+              Expertise in every solution
             </p>
           </div>
 
